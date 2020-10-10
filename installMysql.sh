@@ -2,7 +2,7 @@
 # Description: Set up MySQL Community Release 5.7
 
 echo "se instalara mysql 5.7, espere..."
-slep 3
+sleep 3
 
 # Get the repo RPM and install it.
 wget http://dev.mysql.com/get/mysql57-community-release-el7-7.noarch.rpm 
