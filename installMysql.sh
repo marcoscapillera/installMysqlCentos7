@@ -18,7 +18,10 @@ grep 'A temporary password' /var/log/mysqld.log |tail -1
 echo "Debes log con la pass temporal con el siguiente comando mysql -u root -pastemporal"
 
 # Log in to the server with the temporary password, and pass the SQL file to it.
-alter user 'root'@'localhost' identified by 'admin123';
+echo "Ingrese new password"
+read pass
+
+alter user 'root'@'localhost' identified by '$pass';
 
 service mysqld start
 service mysqld status
