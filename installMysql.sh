@@ -22,3 +22,6 @@ mysql -u root --password="$temp_password" --connect-expired-password < reset_pas
 
 service mysqld start
 service mysqld status
+
+
+## localectl set-keymap es
