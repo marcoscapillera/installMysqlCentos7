@@ -12,10 +12,12 @@ yum  install mysql-community-server
 
 
 # Get the temporary password
-grep 'A temporary password' /var/log/mysqld.log |tail -1
+grep password /var/log/mysqld.log | awk '{print $NF}'
+read -p "Presione enter para continuar"
 
 # Set up a batch file with the SQL commands
 echo "Debes log con la pass temporal con el siguiente comando mysql -u root -pastemporal"
+read -p "Presione enter para continuar"
 
 # Log in to the server with the temporary password, and pass the SQL file to it.
 echo "Ingrese new password"
