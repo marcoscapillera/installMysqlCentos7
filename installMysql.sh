@@ -1,9 +1,9 @@
 #!/bin/bash
 yum localinstall https://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm
 read -p "Presione enter para continuar"
-#yum install mysql-community-server
-#read -p "Presione enter para continuar"
-#service mysqld start
+yum install mysql-community-server
+read -p "Presione enter para continuar"
+service mysqld start
 #grep 'A temporary password' /var/log/mysqld.log |tail -1
 
 #read -p "Ingrese a mysql con mysql -u root -p passwordtemp"
