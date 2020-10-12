@@ -30,9 +30,6 @@ read op
 case "$op" in 
     1) 
     echo "Ejecutar script de configuracion"
-    echo "Instalando git..."
-    echo sleep 3
-    yum install git 
     echo "Instalando Vim..."
     echo sleep 3
     yum install vim 
