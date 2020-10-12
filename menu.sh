@@ -65,7 +65,9 @@ case "$op" in
     sleep 3
     ./installMysql.sh
     clear
-    ./menu.sh
+    echo "Ingrese comando para generar el password temporal"
+    sleep 3
+    exit 
     ;;
     5)
     echo "Descargando repositorio..."
@@ -77,7 +79,8 @@ case "$op" in
     6)
     echo "Importar Dump a Mysql..."
     sleep 3
-    mysql -u root -p dbTriage < Dump.sql
+    mysql -u root -p dbTriage < /home/$USER/installMysqlCentos7/BaseDeDatos_CDS/Dump.sql && echo "Transaccion realizada con exito!"
+    sleep 3
     clear
     ./menu.sh
 
