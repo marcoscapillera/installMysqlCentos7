@@ -64,9 +64,6 @@ case "$op" in
     echo "Instalacion Mysql..."
     sleep 3
     ./installMysql.sh
-    
-    
-    exit 
     ;;
     5)
     echo "Descargando repositorio..."
