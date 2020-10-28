@@ -64,9 +64,8 @@ case "$op" in
     echo "Instalacion Mysql..."
     sleep 3
     ./installMysql.sh
-    clear
-    echo "Ingrese comando para generar el password temporal"
-    sleep 3
+    
+    
     exit 
     ;;
     5)
