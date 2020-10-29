@@ -1,6 +1,9 @@
 #!/bin/bash
 #yum localinstall https://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm
-yum localinstall https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
+#yum localinstall https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
+wget https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm
+
+#rpm -Uvh mysql80-community-release-el7-3.noarch.rpm
 
 read -p "Presione enter para continuar"
 yum install mysql-community-server
